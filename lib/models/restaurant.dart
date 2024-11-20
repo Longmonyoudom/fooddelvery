@@ -12,7 +12,7 @@ class Restaurant extends ChangeNotifier {
         name: "Classic Cheeseburger",
         description:
             "A juicy beef patty with melted cheddar, lettuce, tomato, and a hint of onion and pickle.",
-        imagePath: "lib/images/burgers/dess_2.png",
+        imagePath: "lib/images/burgers/burger.png",
         price: 0.99,
         category: FoodCategory.burgers,
         availableAddons: [
@@ -24,7 +24,7 @@ class Restaurant extends ChangeNotifier {
         name: "Classic Cheeseburger",
         description:
             "A juicy beef patty with melted cheddar, lettuce, tomato, and a hint of onion and pickle.",
-        imagePath: "lib/images/burgers/dess_2.png",
+        imagePath: "lib/images/burgers/burger.png",
         price: 0.99,
         category: FoodCategory.burgers,
         availableAddons: [
@@ -36,7 +36,7 @@ class Restaurant extends ChangeNotifier {
         name: "Classic Cheeseburger",
         description:
             "A juicy beef patty with melted cheddar, lettuce, tomato, and a hint of onion and pickle.",
-        imagePath: "lib/images/burgers/dess_2.png",
+        imagePath: "lib/images/burgers/burger2.jpg",
         price: 0.99,
         category: FoodCategory.burgers,
         availableAddons: [
@@ -48,7 +48,7 @@ class Restaurant extends ChangeNotifier {
         name: "Classic Cheeseburger",
         description:
             "A juicy beef patty with melted cheddar, lettuce, tomato, and a hint of onion and pickle.",
-        imagePath: "lib/images/burgers/dess_2.png",
+        imagePath: "lib/images/burgers/burger2.jpg",
         price: 0.99,
         category: FoodCategory.burgers,
         availableAddons: [
@@ -60,7 +60,7 @@ class Restaurant extends ChangeNotifier {
         name: "Classic Cheeseburger",
         description:
             "A juicy beef patty with melted cheddar, lettuce, tomato, and a hint of onion and pickle.",
-        imagePath: "lib/images/burgers/dess_2.png",
+        imagePath: "lib/images/burgers/burger2.jpg",
         price: 0.99,
         category: FoodCategory.burgers,
         availableAddons: [
