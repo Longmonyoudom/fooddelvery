@@ -24,7 +24,7 @@ class Restaurant extends ChangeNotifier {
         name: "Classic Cheeseburger",
         description:
             "A juicy beef patty with melted cheddar, lettuce, tomato, and a hint of onion and pickle.",
-        imagePath: "lib/images/burgers/burger.png",
+        imagePath: "lib/images/burgers/hamburger.jpg",
         price: 0.99,
         category: FoodCategory.burgers,
         availableAddons: [
@@ -36,7 +36,7 @@ class Restaurant extends ChangeNotifier {
         name: "Classic Cheeseburger",
         description:
             "A juicy beef patty with melted cheddar, lettuce, tomato, and a hint of onion and pickle.",
-        imagePath: "lib/images/burgers/burger2.jpg",
+        imagePath: "lib/images/burgers/burger4.jpg",
         price: 0.99,
         category: FoodCategory.burgers,
         availableAddons: [
@@ -48,7 +48,7 @@ class Restaurant extends ChangeNotifier {
         name: "Classic Cheeseburger",
         description:
             "A juicy beef patty with melted cheddar, lettuce, tomato, and a hint of onion and pickle.",
-        imagePath: "lib/images/burgers/burger2.jpg",
+        imagePath: "lib/images/burgers/burgerbeef.jpg",
         price: 0.99,
         category: FoodCategory.burgers,
         availableAddons: [
@@ -60,7 +60,7 @@ class Restaurant extends ChangeNotifier {
         name: "Classic Cheeseburger",
         description:
             "A juicy beef patty with melted cheddar, lettuce, tomato, and a hint of onion and pickle.",
-        imagePath: "lib/images/burgers/burger2.jpg",
+        imagePath: "lib/images/burgers/burger3.png",
         price: 0.99,
         category: FoodCategory.burgers,
         availableAddons: [
@@ -71,10 +71,34 @@ class Restaurant extends ChangeNotifier {
 
     // salads
     Food(
-        name: "Classic Cheeseburger",
+        name: "Classic Southern Salad Recipes",
         description:
             "A juicy beef patty with melted cheddar, lettuce, tomato, and a hint of onion and pickle.",
-        imagePath: "lib/images/burgers/dess_2.png",
+        imagePath: "lib/images/salads/asian-sesame-salad-15-1200x1200-1.jpg",
+        price: 0.99,
+        category: FoodCategory.salads,
+        availableAddons: [
+          Addon(name: "Extra cheese", price: 0.99),
+          Addon(name: "Bacon", price: 1.99),
+          Addon(name: "Avocado", price: 2.99),
+        ]),
+    Food(
+        name: "Garden-Fresh Chef Salad Recipe",
+        description:
+            "A juicy beef patty with melted cheddar, lettuce, tomato, and a hint of onion and pickle.",
+        imagePath: "lib/images/salads/Garden-Fresh-Chef-Salad.jpg",
+        price: 0.99,
+        category: FoodCategory.salads,
+        availableAddons: [
+          Addon(name: "Extra cheese", price: 0.99),
+          Addon(name: "Bacon", price: 1.99),
+          Addon(name: "Avocado", price: 2.99),
+        ]),
+    Food(
+        name: "Classic Southern Salad Recipes",
+        description:
+            "A juicy beef patty with melted cheddar, lettuce, tomato, and a hint of onion and pickle.",
+        imagePath: "lib/images/salads/asian-sesame-salad-15-1200x1200-1.jpg",
         price: 0.99,
         category: FoodCategory.salads,
         availableAddons: [
@@ -86,7 +110,7 @@ class Restaurant extends ChangeNotifier {
         name: "Classic Cheeseburger",
         description:
             "A juicy beef patty with melted cheddar, lettuce, tomato, and a hint of onion and pickle.",
-        imagePath: "lib/images/burgers/dess_2.png",
+        imagePath: "lib/images/salads/Garden-Fresh-Chef-Salad.jpg",
         price: 0.99,
         category: FoodCategory.salads,
         availableAddons: [
@@ -98,31 +122,7 @@ class Restaurant extends ChangeNotifier {
         name: "Classic Cheeseburger",
         description:
             "A juicy beef patty with melted cheddar, lettuce, tomato, and a hint of onion and pickle.",
-        imagePath: "lib/images/burgers/dess_2.png",
-        price: 0.99,
-        category: FoodCategory.salads,
-        availableAddons: [
-          Addon(name: "Extra cheese", price: 0.99),
-          Addon(name: "Bacon", price: 1.99),
-          Addon(name: "Avocado", price: 2.99),
-        ]),
-    Food(
-        name: "Classic Cheeseburger",
-        description:
-            "A juicy beef patty with melted cheddar, lettuce, tomato, and a hint of onion and pickle.",
-        imagePath: "lib/images/burgers/dess_2.png",
-        price: 0.99,
-        category: FoodCategory.salads,
-        availableAddons: [
-          Addon(name: "Extra cheese", price: 0.99),
-          Addon(name: "Bacon", price: 1.99),
-          Addon(name: "Avocado", price: 2.99),
-        ]),
-    Food(
-        name: "Classic Cheeseburger",
-        description:
-            "A juicy beef patty with melted cheddar, lettuce, tomato, and a hint of onion and pickle.",
-        imagePath: "lib/images/burgers/dess_2.png",
+        imagePath: "lib/images/salads/asian-sesame-salad-15-1200x1200-1.jpg",
         price: 0.99,
         category: FoodCategory.salads,
         availableAddons: [
@@ -133,10 +133,22 @@ class Restaurant extends ChangeNotifier {
 
     // sides
     Food(
-        name: "Classic Cheeseburger",
+        name: "Pasta Archives - The Country Cook",
         description:
             "A juicy beef patty with melted cheddar, lettuce, tomato, and a hint of onion and pickle.",
-        imagePath: "lib/images/burgers/dess_2.png",
+        imagePath: "lib/images/sides/pasta.jpg",
+        price: 0.99,
+        category: FoodCategory.sides,
+        availableAddons: [
+          Addon(name: "Extra cheese", price: 0.99),
+          Addon(name: "Bacon", price: 1.99),
+          Addon(name: "Avocado", price: 2.99),
+        ]),
+    Food(
+        name: "Chunky Pizza Party",
+        description:
+            "A juicy beef patty with melted cheddar, lettuce, tomato, and a hint of onion and pickle.",
+        imagePath: "lib/images/sides/pizza.jpg",
         price: 0.99,
         category: FoodCategory.sides,
         availableAddons: [
@@ -148,7 +160,7 @@ class Restaurant extends ChangeNotifier {
         name: "Classic Cheeseburger",
         description:
             "A juicy beef patty with melted cheddar, lettuce, tomato, and a hint of onion and pickle.",
-        imagePath: "lib/images/burgers/dess_2.png",
+        imagePath: "lib/images/burgers/burger3.png",
         price: 0.99,
         category: FoodCategory.sides,
         availableAddons: [
@@ -157,10 +169,10 @@ class Restaurant extends ChangeNotifier {
           Addon(name: "Avocado", price: 2.99),
         ]),
     Food(
-        name: "Classic Cheeseburger",
+        name: "Chunky Pizza Party",
         description:
             "A juicy beef patty with melted cheddar, lettuce, tomato, and a hint of onion and pickle.",
-        imagePath: "lib/images/burgers/dess_2.png",
+        imagePath: "lib/images/sides/pizza.jpg",
         price: 0.99,
         category: FoodCategory.sides,
         availableAddons: [
@@ -169,22 +181,10 @@ class Restaurant extends ChangeNotifier {
           Addon(name: "Avocado", price: 2.99),
         ]),
     Food(
-        name: "Classic Cheeseburger",
+        name: "Pasta Archives - The Country Cook",
         description:
             "A juicy beef patty with melted cheddar, lettuce, tomato, and a hint of onion and pickle.",
-        imagePath: "lib/images/burgers/dess_2.png",
-        price: 0.99,
-        category: FoodCategory.sides,
-        availableAddons: [
-          Addon(name: "Extra cheese", price: 0.99),
-          Addon(name: "Bacon", price: 1.99),
-          Addon(name: "Avocado", price: 2.99),
-        ]),
-    Food(
-        name: "Classic Cheeseburger",
-        description:
-            "A juicy beef patty with melted cheddar, lettuce, tomato, and a hint of onion and pickle.",
-        imagePath: "lib/images/burgers/dess_2.png",
+        imagePath: "lib/images/sides/pasta.jpg",
         price: 0.99,
         category: FoodCategory.sides,
         availableAddons: [
@@ -194,10 +194,10 @@ class Restaurant extends ChangeNotifier {
         ]),
     // desserts
     Food(
-        name: "Classic Cheeseburger",
+        name: "Bake Summer Desserts",
         description:
             "A juicy beef patty with melted cheddar, lettuce, tomato, and a hint of onion and pickle.",
-        imagePath: "lib/images/burgers/dess_2.png",
+        imagePath: "lib/images/desserts/cake1.jpg",
         price: 0.99,
         category: FoodCategory.desserts,
         availableAddons: [
@@ -206,10 +206,10 @@ class Restaurant extends ChangeNotifier {
           Addon(name: "Avocado", price: 2.99),
         ]),
     Food(
-        name: "Classic Cheeseburger",
+        name: "Chocolate Dessert Recipe",
         description:
             "A juicy beef patty with melted cheddar, lettuce, tomato, and a hint of onion and pickle.",
-        imagePath: "lib/images/burgers/dess_2.png",
+        imagePath: "lib/images/desserts/cake2.jpg",
         price: 0.99,
         category: FoodCategory.desserts,
         availableAddons: [
@@ -218,10 +218,10 @@ class Restaurant extends ChangeNotifier {
           Addon(name: "Avocado", price: 2.99),
         ]),
     Food(
-        name: "Classic Cheeseburger",
+        name: "Ice Cream Cookie Dessert Recipe",
         description:
             "A juicy beef patty with melted cheddar, lettuce, tomato, and a hint of onion and pickle.",
-        imagePath: "lib/images/burgers/dess_2.png",
+        imagePath: "lib/images/desserts/icecream.jpg",
         price: 0.99,
         category: FoodCategory.desserts,
         availableAddons: [
@@ -230,10 +230,10 @@ class Restaurant extends ChangeNotifier {
           Addon(name: "Avocado", price: 2.99),
         ]),
     Food(
-        name: "Classic Cheeseburger",
+        name: "Bake Summer Desserts",
         description:
             "A juicy beef patty with melted cheddar, lettuce, tomato, and a hint of onion and pickle.",
-        imagePath: "lib/images/burgers/dess_2.png",
+        imagePath: "lib/images/desserts/cake1.jpg",
         price: 0.99,
         category: FoodCategory.desserts,
         availableAddons: [
@@ -242,10 +242,10 @@ class Restaurant extends ChangeNotifier {
           Addon(name: "Avocado", price: 2.99),
         ]),
     Food(
-        name: "Classic Cheeseburger",
+        name: "Chocolate Dessert Recipe",
         description:
             "A juicy beef patty with melted cheddar, lettuce, tomato, and a hint of onion and pickle.",
-        imagePath: "lib/images/burgers/dess_2.png",
+        imagePath: "lib/images/desserts/cake2.jpg",
         price: 0.99,
         category: FoodCategory.desserts,
         availableAddons: [
@@ -255,10 +255,10 @@ class Restaurant extends ChangeNotifier {
         ]),
     // drinks
     Food(
-        name: "Classic Cheeseburger",
+        name: "CoCa",
         description:
             "A juicy beef patty with melted cheddar, lettuce, tomato, and a hint of onion and pickle.",
-        imagePath: "lib/images/burgers/dess_2.png",
+        imagePath: "lib/images/drinks/coca.jpg",
         price: 0.99,
         category: FoodCategory.drinks,
         availableAddons: [
@@ -267,10 +267,10 @@ class Restaurant extends ChangeNotifier {
           Addon(name: "Avocado", price: 2.99),
         ]),
     Food(
-        name: "Classic Cheeseburger",
+        name: "Pepsi",
         description:
             "A juicy beef patty with melted cheddar, lettuce, tomato, and a hint of onion and pickle.",
-        imagePath: "lib/images/burgers/dess_2.png",
+        imagePath: "lib/images/drinks/pessimax.jpg",
         price: 0.99,
         category: FoodCategory.drinks,
         availableAddons: [
@@ -279,10 +279,10 @@ class Restaurant extends ChangeNotifier {
           Addon(name: "Avocado", price: 2.99),
         ]),
     Food(
-        name: "Classic Cheeseburger",
+        name: "Sprite",
         description:
             "A juicy beef patty with melted cheddar, lettuce, tomato, and a hint of onion and pickle.",
-        imagePath: "lib/images/burgers/dess_2.png",
+        imagePath: "lib/images/drinks/sprite.jpg",
         price: 0.99,
         category: FoodCategory.drinks,
         availableAddons: [
@@ -291,10 +291,10 @@ class Restaurant extends ChangeNotifier {
           Addon(name: "Avocado", price: 2.99),
         ]),
     Food(
-        name: "Classic Cheeseburger",
+        name: "CoCa",
         description:
             "A juicy beef patty with melted cheddar, lettuce, tomato, and a hint of onion and pickle.",
-        imagePath: "lib/images/burgers/dess_2.png",
+        imagePath: "lib/images/drinks/coca.jpg",
         price: 0.99,
         category: FoodCategory.drinks,
         availableAddons: [
@@ -303,10 +303,10 @@ class Restaurant extends ChangeNotifier {
           Addon(name: "Avocado", price: 2.99),
         ]),
     Food(
-        name: "Classic Cheeseburger",
+        name: "Pepsi",
         description:
             "A juicy beef patty with melted cheddar, lettuce, tomato, and a hint of onion and pickle.",
-        imagePath: "lib/images/burgers/dess_2.png",
+        imagePath: "lib/images/drinks/pessimax.jpg",
         price: 0.99,
         category: FoodCategory.drinks,
         availableAddons: [

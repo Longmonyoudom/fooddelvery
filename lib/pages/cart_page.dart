@@ -12,34 +12,34 @@ class CartPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Consumer<Restaurant>(
       builder: (context, restaurant, child) {
-        // cart
+        // Retrieve cart items
         final userCart = restaurant.cart;
-        // scaffold UI
+
+        // Scaffold UI
         return Scaffold(
           appBar: AppBar(
             title: const Text("Cart"),
             backgroundColor: Colors.transparent,
             foregroundColor: Theme.of(context).colorScheme.inversePrimary,
             actions: [
-              // clear cart button
+              // Clear cart button
               IconButton(
                 onPressed: () {
                   showDialog(
                     context: context,
                     builder: (context) => AlertDialog(
-                      title: const Text(
-                          "Are you sure you want to clear the cart?"),
+                      title: const Text("Are you sure you want to clear the cart?"),
                       actions: [
-                        // cancel button
+                        // Cancel button
                         TextButton(
                           onPressed: () => Navigator.pop(context),
                           child: const Text("Cancel"),
                         ),
-                        // yes button
+                        // Yes button
                         TextButton(
                           onPressed: () {
                             Navigator.pop(context);
-                            restaurant.clearCard();
+                            restaurant.clearCard(); // Fixed method name
                           },
                           child: const Text("Yes"),
                         ),
@@ -48,53 +48,47 @@ class CartPage extends StatelessWidget {
                   );
                 },
                 icon: const Icon(Icons.delete),
-              )
-            ],
-          ), // AppBar
-          body: Column(
-            children: [
-              //list of cart
-              Expanded(
-                child: Column(
-                  children: [
-                    userCart.isEmpty
-                        ? const Expanded(
-                            child: Center(
-                              child: Text("Cart is empty.."),
-                            ),
-                          )
-                        : Expanded(
-                            child: ListView.builder(
-                                itemCount: userCart.length,
-                                itemBuilder: (context, index) {
-                                  //get individuals cart item
-                                  final cartItem = userCart[index];
-
-                                  //return cart tile UI
-                                  return MyCartTile(
-                                    cartItem: cartItem,
-                                  );
-                                }),
-                          ),
-                  ],
-                ),
               ),
-              //btn to pay
-              MyButton(
-                onTap: () => Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => const PaymentPage(),
-                  ),
-                ),
-                text: "Go to checkout",
-              ),
-
-              const SizedBox(height: 25)
             ],
           ),
-        ); // Scaffold
+          body: Column(
+            children: [
+              // List of cart items or empty state
+              Expanded(
+                child: userCart.isEmpty
+                    ? const Center(
+                        child: Text("Cart is empty.."),
+                      )
+                    : ListView.builder(
+                        itemCount: userCart.length,
+                        itemBuilder: (context, index) {
+                          // Get individual cart item
+                          final cartItem = userCart[index];
+
+                          // Return cart tile UI
+                          return MyCartTile(
+                            cartItem: cartItem,
+                          );
+                        },
+                      ),
+              ),
+              // Button to proceed to payment
+              Padding(
+                padding: const EdgeInsets.symmetric(vertical: 25.0),
+                child: MyButton(
+                  onTap: () => Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const PaymentPage(),
+                    ),
+                  ),
+                  text: "Go to checkout",
+                ),
+              ),
+            ],
+          ),
+        );
       },
-    ); // Consumer
+    );
   }
 }

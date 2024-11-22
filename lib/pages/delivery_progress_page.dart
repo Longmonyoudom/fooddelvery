@@ -70,7 +70,7 @@ class _DeliveryProgressPageState extends State<DeliveryProgressPage> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                "Mitch Koko",
+                "Mony Oudom",
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 18,
